@@ -1424,6 +1424,73 @@ footer.autoheight {
 }
 
 
+.portfolio-showcase-wrapper {
+    padding-top: 50px;
+}
+.showcase-row {
+    width: 25%;
+    padding: 0 15px;
+}
+.showcase-item {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+} 
+.showcase-text {
+    position: absolute;
+    height: 100px;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transition: .4s;
+    padding: 25px;
+}
+.showcase-text a {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+.showcase-text small {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 300;
+}
+.showcase-item img {
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}
+.showcase-item:hover .showcase-text {
+    transform: translateY(-100px);
+}
+.showcase-item:hover img {
+    transform: translateY(-50px);
+}
+.see-more-button button:hover {
+    background: #bd0c1d;
+    color: #fff;
+}
+.see-more-button button {
+    cursor: pointer;
+    background: none;
+    color: #bd0c1d;
+    padding: 12px 40px;
+    border: 1px solid #bd0c1d;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .3s;
+}
+.see-more-button {
+    justify-content: center;
+    margin-bottom: 164px;
+    margin-top: 80px;
+}
+
+
 
 
 /*fix*/
