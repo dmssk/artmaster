@@ -200,6 +200,10 @@ $(document).ready(function(){
         // instead of a settings object
       ]
     });
+    
+    
+//    mask
+    $("#input-tel").mask("+380 (99) 999-99-99");
 });
 $('.arrow-down').click(function(){
        $('html, body').animate({scrollTop:$('#anchor2').position().top}, 500);
