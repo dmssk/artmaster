@@ -1406,6 +1406,7 @@ footer.autoheight {
 .portfolio-select-buttons {
     justify-content: center;
     margin-top: 40px;
+    min-height: 40px;
 }
 .portfolio-select-buttons button.active-select {
     border: 1px solid #000;
