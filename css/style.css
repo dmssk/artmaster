@@ -1437,6 +1437,7 @@ footer.autoheight {
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    display: none;
 } 
 .showcase-text {
     position: absolute;

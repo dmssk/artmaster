@@ -212,10 +212,9 @@ $(document).ready(function(){
     // mixitup
     $(function(){
         $('.MixItUp').mixItUp({
-          selectors: {
-            filter: '.filter-1',
-            sort: '.sort-1'
-          }
+            controls: {
+                toggleDefault: 'all'
+            }
         });
       });
 
