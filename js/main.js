@@ -203,8 +203,32 @@ $(document).ready(function(){
     
     
 //    mask
-    $("#input-tel").mask("+380 (99) 999-99-99");
+    if($("#input-tel").length !== 0){
+        $("#input-tel").mask("+380 (99) 999-99-99");
+    }
+    
+
+
+    // mixitup
+    $(function(){
+        $('.MixItUp').mixItUp({
+            controls: {
+                toggleDefault: 'all'
+            }
+        });
+      });
+
+      // tab buttons select
+      $(".portfolio-select-buttons button").click(function(){
+          $(this).addClass("active-select");
+          $(this).siblings().removeClass("active-select");
+      });
+
 });
+
+
+
+
 $('.arrow-down').click(function(){
        $('html, body').animate({scrollTop:$('#anchor2').position().top}, 500);
 });
