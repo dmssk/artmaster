@@ -583,24 +583,11 @@ header.header-main {
 
 .grid-portfolio {
     display: grid !important;
-/*
-    display: -ms-grid !important;
-    display: -webkit-grid !important;
-    display: -moz-grid !important;
-    display: -ms-grid !important;
-    display: -o-grid !important;
-*/
     grid-template-rows: 32.3vh 32.3vh 32.3vh;
     grid-template-columns: 24.8% 25.2% 25.3% 24.7%;
 }
 .portfolio {
     padding-bottom: 114px;
-}
-.qweqwe {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
 }
 
 .portfolio-item {
@@ -713,39 +700,7 @@ header.header-main {
     z-index: 60;
     background: #fff;
 }
-.portfolio-block span {
-/*
-    display: block;
-    position: relative;
-    height: 1px;
-    width: 70px;
-    background: red;
-    position: absolute;
-    top: 50%;
-*/
-}
-.portfolio-block .prev span::after,
-.portfolio-block .next span::after{
-/*
-    content: "";
-    display: block;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-bottom: 1px solid red;
-    border-left: 1px solid red;
-    transform: rotate(45deg);
-    top: -9px;
-    left: 3px;
-*/
-}
-.portfolio-block .next span::after {
-/*
-    transform: rotate(-135deg);
-    top: -9px;
-    left: 48px;
-*/
-}
+
 /* fix */
 .portfolio-item .slick-list,
 .portfolio-item .slick-track {
@@ -782,12 +737,6 @@ header.header-main {
 .portfolio-block .next span::before{
     border-bottom: 2px solid #bd0c1d;
     border-right: 2px solid #bd0c1d;
-}
-.portfolio-block .prev:hover{
-    
-}
-.portfolio-block .next:hover{
-    
 }
 .portfolio-block .arrow a span {
     height: 15px;
@@ -2285,9 +2234,6 @@ footer.autoheight {
     }
     .slide-parthners-mobile .slick-prev {
         left: -20px;
-    }
-    .slide-parthners-mobile .slick-next {
-/*        right: -20px;*/
     }
     .slide-workers {
         width: 280px;
