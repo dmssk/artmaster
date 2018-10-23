@@ -746,6 +746,13 @@ header.header-main {
     left: 48px;
 */
 }
+/* fix */
+.portfolio-item .slick-list,
+.portfolio-item .slick-track {
+    width: 100%;
+    height: 100%;
+}
+
 
 .portfolio-block .arrow{
     position: relative;
