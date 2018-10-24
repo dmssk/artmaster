@@ -152,57 +152,56 @@ $(document).mouseup(function (e) {
 //          })
 $(document).ready(function(){
 
-  $('.slide-parthners-mobile').slick({
-
-  });
-  $('.grid-portfolio.qweqwe .portfolio-item a').slick({
+    $('.slide-parthners-mobile').slick({
+  
+    });
+    $('.slide-wrapper').slick({
       slidesToShow: 1,
-      dots: false,
-      arrows: false,
-      autoheight: true,
-
-  });
-    $('.next').click(function(){
-        $(".grid-portfolio.qweqwe .portfolio-item a").slick('slickNext');
+        dots: false,
+        arrows: false,
+  
     });
-    $('.prev').click(function(){
-        $(".grid-portfolio.qweqwe .portfolio-item a").slick('slickPrev');
-    });
-    $('.grid-portfolio.qweqwe').slickLightbox({
-      itemSelector        : '.portfolio-item a img',
-      navigateByKeyboard  : true,
-      src: "src"
-    });
-    $('.lightbox-trigger').slickLightbox({
-      itemSelector        : '.portfolio-item a img',
-      navigateByKeyboard  : true,
-      src: "src"
-    });
-    $('.slide-workers').slick({
-         slidesToShow: 3,
-         arrows: true,
-        responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-    
-    
+      $('.next').click(function(){
+          $(".slide-wrapper").slick('slickNext');
+      });
+      $('.prev').click(function(){
+          $(".slide-wrapper").slick('slickPrev');
+      });
+      $('.slide-wrapper').slickLightbox({
+        itemSelector        : '.portfolio-item a img',
+        navigateByKeyboard  : true,
+        src: "src"
+      });
+      $('.lightbox-trigger').slickLightbox({
+        itemSelector        : '.portfolio-item a img',
+        navigateByKeyboard  : true,
+        src: "src"
+      });
+      $('.slide-workers').slick({
+           slidesToShow: 3,
+           arrows: true,
+          responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+      
+      
 //    mask
     if($("#input-tel").length !== 0){
         $("#input-tel").mask("+380 (99) 999-99-99");

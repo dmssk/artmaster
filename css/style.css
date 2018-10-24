@@ -2035,15 +2035,16 @@ footer.autoheight {
         letter-spacing: -0.2px;
     }
 }
-.tablet-sider {
-    display: none;
+.tablet-slider,
+.mob-slider {
+    display: none !important;
 }
 @media (max-width: 1024px) {
     .desctop-slider {
         display: none !important;
     }
     .tablet-slider {
-        display: grid;
+        display: grid !important;
     }
     .portfolio-block .arrow {
         margin: inherit;
@@ -2113,8 +2114,8 @@ footer.autoheight {
     .tablet-slider {
         display: none !important;
     }
-    .mob-sider {
-        display: grid;
+    .mob-slider {
+        display: grid !important;
     }
     .container-menu nav {
         padding: 80px 0 0 12px;
